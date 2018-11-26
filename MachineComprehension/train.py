@@ -52,7 +52,7 @@ Doesnt work:
 
 
 
-def evaluate_lenet5(file_name,vocab_file,train_file,dev_file,learning_rate=0.001, n_epochs=2000, nkerns=[90,90], batch_size=1, window_width=2,
+def evaluate_lenet5(file_name,vocab_file,train_file,dev_file,word2vec_file,learning_rate=0.001, n_epochs=2000, nkerns=[90,90], batch_size=1, window_width=2,
                     maxSentLength=64, maxDocLength=60, emb_size=50, hidden_size=200,
                     L2_weight=0.0065, update_freq=1, norm_threshold=5.0, max_s_length=128, max_d_length=128, margin=0.3):
     maxSentLength=max_s_length+2*(window_width-1)
@@ -85,7 +85,7 @@ def evaluate_lenet5(file_name,vocab_file,train_file,dev_file,learning_rate=0.001
 
     rand_values=random_value_normal((vocab_size+1, emb_size), theano.config.floatX, numpy.random.RandomState(1234))
     rand_values[0]=numpy.array(numpy.zeros(emb_size),dtype=theano.config.floatX)
-    rand_values=load_word2vec_to_init(rand_values, 'vocab_glove_50d.txt')
+    rand_values=load_word2vec_to_init(rand_values, word2vec_file)
     embeddings=theano.shared(value=rand_values, borrow=True)      
     
     error_sum=0
@@ -453,4 +453,5 @@ if __name__ == '__main__':
     vocab_file = sys.argv[1]
     train_file = sys.argv[2]
     dev_file = sys.argv[3]
-    evaluate_lenet5(file_name,vocab_file,train_file,dev_file)
+    word2vec_file = sys.argv[4]
+    evaluate_lenet5(file_name,vocab_file,train_file,dev_file,word2vec_file)
