@@ -17,8 +17,8 @@
 ## 运行方法 ##
 训练：
 
-`python train.py vocab.txt train.txt dev.txt`
-其中,vocab.txt为训练所用词表, train.txt为训练所用数据集, dev.txt为开发集。
+`python train.py vocab.txt train.txt dev.txt word2vec.txt`
+其中,vocab.txt为训练所用词表, train.txt为训练所用数据集, dev.txt为开发集,word2vec.txt为预先训练好的词向量文件。
 
 测试：
 
