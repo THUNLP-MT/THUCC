@@ -20,8 +20,8 @@
 -   [篇章断句](https://github.com/thumt/THUCC/tree/master/SentenceSegmentation)
 -   [词义消歧](https://github.com/thumt/THUCC/tree/master/WordSenseDisambiguation)
 -   [诗歌鉴赏](https://github.com/thumt/THUCC/tree/master/PoemAppreciation)
--   [自动翻译](https://github.com/thumt/THUCC/tree/master/translation/code/THUMT)
--   [阅读理解](/machinecomprehension)
+-   [自动翻译](https://github.com/thumt/THUCC/tree/master/MachineTranslation)
+-   [阅读理解](https://github.com/thumt/THUCC/tree/master/MachineComprehension)
 
 ## 开发团队
 
