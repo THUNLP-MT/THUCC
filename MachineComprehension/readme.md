@@ -29,10 +29,9 @@ THUCC 文言文阅读理解系统在线演示[http://166.111.5.245:3456/index](h
 ## 使用说明
 
 
--该系统使用以下命令进行训练：`python train.py vocab.txt train.txt dev.txt word2vec.txt`
-其中,`vocab.txt`为训练所用词表, `train.txt`为训练所用数据集, `dev.txt`为开发集,`word2vec.txt`为预先训练好的词向量文件。
-该系统使用以下命令进行答题：`python test.py -i input.txt -o output.txt -m WenYan_model`
--其中`input.txt`为存放题目的文件，`WenYan_model`为训练好的模型文件，`output.txt`为输出文件。
+- 该系统使用以下命令进行训练：`python train.py vocab.txt train.txt dev.txt word2vec.txt`  其中,`vocab.txt`为训练所用词表, `train.txt`为训练所用数据集, `dev.txt`为开发集,`word2vec.txt`为预先训练好的词向量文件。
+
+- 该系统使用以下命令进行答题：`python test.py -i input.txt -o output.txt -m WenYan_model`  其中`input.txt`为存放题目的文件，`WenYan_model`为训练好的模型文件，`output.txt`为输出文件。
 `input.txt`的格式为`Label\tDocument\tQuestion`,共四行。其中,`Label`为该行标记，可为0或1，`Document`为文言文内容，`Question`为问题的一个选项；这样的四行数据组成了一个文言文阅读理解题目。
 
 ## 数据下载
