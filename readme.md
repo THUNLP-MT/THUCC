@@ -23,7 +23,7 @@ THUCC: 清华大学文言文自动处理软件包
 -   [自动翻译](https://github.com/thumt/THUCC/tree/master/MachineTranslation)
 -   [阅读理解](https://github.com/thumt/THUCC/tree/master/MachineComprehension)
 
-关于软件包相关的数据集和系统演示，请访问：http://thucc.thunlp.org/。
+关于软件包相关的数据集和系统演示，请访问：[http://thucc.thunlp.org/](http://thucc.thunlp.org/)
 
 ## 开发团队
 
